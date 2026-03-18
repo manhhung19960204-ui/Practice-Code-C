@@ -2,6 +2,40 @@
 
 using namespace std;
 
+int Pointer() {
+	//Basic
+	int n = 10;
+	int* ptr = &n;
+	cout << n ;
+	*ptr = 20 ;
+	cout << n ;
+
+}
+
+int OddEven() {
+	int n ;
+    cin >> n ;
+    if(n%2 == 0) {
+      cout << n <<" is an even number";
+    } else{
+      cout << n <<" is an odd number";
+    }
+}
+
+int InputName() {
+	string Name , Address;
+	cin >> Name;
+	cin >> Address;
+	cout << "Name: " << Name << endl;
+	cout << "Address: " << Address;
+	
+	int age ;
+    string name;
+    cin >> age >> name;
+    cout << "In 15 years, age of " << age  << "will be" << name ;
+	return 0;
+}
+
 int AllDataType() {
 	int x = 10;
 	string y = "Hung";
@@ -28,7 +62,10 @@ int bai10() {
 }
 
 int main() {
-    cout << bai10();
-    cout << AllDataType();
+    //cout << bai10();
+    //cout << AllDataType();
+    //cout << InputName() ;
+    cout << OddEven();
 	return 0;
 }
+
