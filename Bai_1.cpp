@@ -2,6 +2,16 @@
 
 using namespace std;
 
+void Tang_gia_tri(int* n) {
+	*n = *n + 1;
+}
+
+int ChangeValueWithPointer() {
+	int n = 10 ;
+	Tang_gia_tri(&n);
+	cout << n << "--" ;
+}
+
 int Pointer() {
 	//Basic
 	int n = 10;
@@ -65,7 +75,7 @@ int main() {
     //cout << bai10();
     //cout << AllDataType();
     //cout << InputName() ;
-    cout << OddEven();
-	return 0;
+    //cout << OddEven();
+    cout << ChangeValueWithPointer();
 }
 
