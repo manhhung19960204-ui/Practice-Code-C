@@ -6,6 +6,20 @@ void Tang_gia_tri(int* n) {
 	*n = *n + 1;
 }
 
+int MaxNumber() {
+	int a, b, c;
+    std::cin >> a >> b >> c;
+    int d[] = {a, b, c};
+    int max = d[0];
+    for(int i = 1 ; i < 3 ; i++) {
+    if (d[i] > max) {
+            max = d[i];
+        }
+    } 
+    std::cout << "Max number is: " << max << std::endl;    
+	return max;
+}
+
 int ChangeValueWithPointer() {
 	int n = 10 ;
 	Tang_gia_tri(&n);
@@ -76,6 +90,7 @@ int main() {
     //cout << AllDataType();
     //cout << InputName() ;
     //cout << OddEven();
-    cout << ChangeValueWithPointer();
+    //cout << ChangeValueWithPointer();
+    MaxNumber();
 }
 
