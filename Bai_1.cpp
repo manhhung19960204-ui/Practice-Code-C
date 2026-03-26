@@ -6,6 +6,39 @@ void Tang_gia_tri(int* n) {
 	*n = *n + 1;
 }
 
+int sumplus() {
+	int a , b , tong = 0 ;
+    cin >> a >> b ;
+    for (int i = a ; i <= b ; i++) {
+        tong = tong + i ; 
+    }
+    cout << tong ;
+    return 0;
+}
+
+int increase() {
+	int a , b ,c  ;
+    cin >> a >> b >> c;
+    int d[] = {a,b,c};
+    int test; 
+    for (int i = 0 ; i < 3 ; i ++) {
+        if(d[i] < d[i+1] ) {
+           test = d[i+1];
+        } 
+        if (d[i] > d[i+1]) {
+            test = d[i];
+        }
+    }
+    if(test == d[2]) {
+         cout << "increasing";
+    } else if(test == d[0]) {
+         cout << "decreasing";
+    } else {
+          cout << "neither increasing nor decreasing order";
+    }
+	return 0;
+}
+
 int MaxNumber() {
 	int a, b, c;
     std::cin >> a >> b >> c;
@@ -91,6 +124,6 @@ int main() {
     //cout << InputName() ;
     //cout << OddEven();
     //cout << ChangeValueWithPointer();
-    MaxNumber();
+    sumplus();
 }
 
